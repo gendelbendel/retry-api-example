@@ -1,0 +1,20 @@
+{
+  "name": "retry-api-example",
+  "version": "1.0.0",
+  "description": "Retrying API calls with promises in node js",
+  "main": "server.js",
+  "scripts": {
+    "start:server": "nodemon server/server.js",
+    "start:api": "node retry-api.js"
+  },
+  "author": "David Ward",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "hapi": "^16.5.0",
+    "nodemon": "^1.11.0",
+    "ramda": "^0.24.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
