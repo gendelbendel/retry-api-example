@@ -6,12 +6,20 @@ The `retryPromise` function located in [lib/retry-promise.js](lib/retry-promise.
 
 ## Setup ##
 
-To test the existing setup:
+### Without Docker ###
 
 1. Clone this repo
 2. `npm install`
 3. In one tab, run `npm run start:server`
 4. In a second tab, run `npm run start:api`
+
+### Using Docker ###
+
+1. Clone this repo
+2. `npm install`
+3. `docker-compose build`
+4. `docker-compose up -d`
+5. `npm run start:api`
 
 You'll observe that you stop polling the API after you get a `status: 'completed'` response, and retry up to 10 times.
 
