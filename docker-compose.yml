@@ -1,0 +1,11 @@
+  version: '2'
+  services:
+    retry-api-example:
+      command: ["nodemon", "-w", ".", "--exec", "npm", "run", "start:server"]
+      container_name: retry-api-example
+      build: .
+      volumes:
+        - './:/usr/src/app'
+      privileged: true
+      ports:
+        - "3000:3000"
